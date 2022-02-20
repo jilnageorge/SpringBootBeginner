@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "1fb17046-37ab-48d2-ab2d-436f48a3b944",
+		"name": "CourseAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List All Topics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/topics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Topic Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/topics/Spring",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics",
+						"Spring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Topic",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"Java\",\r\n        \"name\": \"Java Tutorial\",\r\n        \"description\": \"Java Tutorial for Beginners\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update A Topic",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"SpringBoot\",\r\n        \"name\": \"Spring Boot\",\r\n        \"description\": \"Spring Boot Starter Course\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topics/Spring3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics",
+						"Spring3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A Topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/topics/Spring",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics",
+						"Spring"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
